@@ -44,7 +44,7 @@ public class ControladorGeral {
         saves = new ControladorSaves(new RepositorioSave(pastaDados), hud, entrada);
 
         carregarPersistencia();
-    } // -------------------------------
+    } //---------------------------------------------------------------------
 
     // Lê configurações e progresso; se estiverem inválidos, avisa e segue com o padrão.
     private void carregarPersistencia() {
@@ -160,6 +160,8 @@ public class ControladorGeral {
         }
     }
 
+    //---------------------------------------------------------------------
+
     // Personalidade inicial: 1, 2 ou 3. Qualquer outra entrada começa com status zerados.
     private void escolherPersonalidade(EstadodeJogoAtual estado) {
         hud.HudStarterStats();
@@ -202,6 +204,9 @@ public class ControladorGeral {
         SemiCleanTerminal();
     }
 
+
+    //---------------------------------------------------------------------
+
     // O extra roda em um estado próprio, sem tocar nos saves.
     private EstadodeJogoAtual extraComNomeAtual() {
         EstadodeJogoAtual estado = new EstadodeJogoAtual();
@@ -238,6 +243,8 @@ public class ControladorGeral {
         SemiCleanTerminal();
     }
 
+    //---------------------------------------------------------------------
+
     private void alterarNomePadrao() {
         hud.pedirNome(null);
         String texto = entrada.lerLinha().trim();
@@ -252,6 +259,9 @@ public class ControladorGeral {
         }
         salvarConfiguracoes();
     }
+
+
+    //---------------------------------------------------------------------
 
     private void salvarConfiguracoes() {
         try {

@@ -7,7 +7,5 @@ public class Main {
     } // Inicia o jogo (Necessário)
     // Putnik V2.0 - Jhony França, Cleuber Coelho
     // Entrega 02 --
-
     // Foram corrigidos: Implementação MVC.
-    // Adicionados: Saves e LOAD.
 }

@@ -35,6 +35,9 @@ public class Entrada {
         }
     }
 
+
+    //---------------------------------------------------------------------
+
     public boolean confirmar(String pergunta) {
         while (true) {
             hud.perguntaConfirmacao(pergunta);

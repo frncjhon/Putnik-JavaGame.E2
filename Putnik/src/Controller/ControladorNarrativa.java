@@ -1,5 +1,7 @@
 package Controller;
 
+//---------------------------------------------------------------------
+
 import java.util.List;
 
 import Model.AplicarEfeito;
@@ -112,6 +114,8 @@ public class ControladorNarrativa {
             }
         }
     }
+
+    //---------------------------------------------------------------------
 
     // ENTER segue a história; "M" abre o menu de pausa.
     // Devolve true se o jogador pediu para sair para o menu principal.

@@ -2,11 +2,7 @@ package Model;
 
 import java.util.List;
 
-/**
- * Repositório das escolhas da história.
- * A escolha abaixo é um EXEMPLO funcional: troque os textos e efeitos
- * e acrescente as demais escolhas da narrativa na lista.
- */
+// Repositório para escolhas durante a narrativa.
 public class RepEscolhas {
 
     private static final List<Escolha> ESCOLHAS = List.of(

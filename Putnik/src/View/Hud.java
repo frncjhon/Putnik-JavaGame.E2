@@ -1,5 +1,9 @@
 package View;
 
+//-------------------------------------------------------------------------------------------
+// Classe atuante na camada de Visão(View) do MVC, aqui está contido todas as saidas do projeto
+// exibidas para o USER.
+//-------------------------------------------------------------------------------------------
 
 public class Hud {
     public void Menu() {
@@ -165,7 +169,11 @@ public class Hud {
         System.out.print("[ENTER] continuar  |  [M] menu de pausa: ");
     }
 
-    // ---- Mensagens gerais
+
+    //-------------------------------------------------------------------------------------------
+
+
+    // Mensagens gerais
 
     public void sucesso(String mensagem) {
         System.out.println("| [OK] " + mensagem);
@@ -187,7 +195,11 @@ public class Hud {
         System.out.println("| Responda com 's' (sim) ou 'n' (não).");
     }
 
-    // ---- Saves
+
+    //-------------------------------------------------------------------------------------------
+
+
+    // Saves
 
     public void exibirSlot(String rotulo, String nome, String dataHora, String local, String resumo) {
         System.out.println("╔═ " + rotulo);
@@ -222,7 +234,11 @@ public class Hud {
         System.out.print("| Slot para " + acao + " (" + min + " a 3): ");
     }
 
-    // ---- Pausa e configurações
+
+    //-------------------------------------------------------------------------------------------
+
+
+    // Pausa e configurações
 
     public void menuPausa() {
         System.out.println("""
@@ -244,7 +260,11 @@ public class Hud {
         System.out.println();
     }
 
-    // ---- Conquistas
+
+    //-------------------------------------------------------------------------------------------
+
+
+    // Conquistas
 
     public void exibirConquistas(boolean[] finais, boolean extra) {
         System.out.println("═══════ CONQUISTAS ═══════");
@@ -267,7 +287,11 @@ public class Hud {
                 """);
     }
 
-    // ---- Escolhas
+
+    //-------------------------------------------------------------------------------------------
+
+
+    // Escolhas
 
     public void exibirPergunta(String pergunta) {
         System.out.println();

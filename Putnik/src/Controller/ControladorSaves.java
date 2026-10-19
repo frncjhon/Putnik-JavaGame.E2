@@ -27,7 +27,8 @@ public class ControladorSaves {
         this.entrada = entrada;
     }
 
-    // -------------------------------
+    //---------------------------------------------------------------------
+
     // Salvamento
 
     // Salva no slot 0 (autosave), sem interromper o jogo em caso de falha.
@@ -39,6 +40,8 @@ public class ControladorSaves {
             hud.erro("Autosave falhou: " + e.getMessage());
         }
     }
+
+    //---------------------------------------------------------------------
 
     // Salvamento manual: o jogador escolhe um dos slots 1 a 3.
     public void salvarManual(EstadodeJogoAtual estado) {
@@ -60,7 +63,8 @@ public class ControladorSaves {
         }
     }
 
-    // -------------------------------
+    //---------------------------------------------------------------------
+
     // Carregamento
 
     // "Continuar": abre o save mais recente. Devolve null se não houver.
@@ -72,6 +76,8 @@ public class ControladorSaves {
         }
         return recente.get().getEstado();
     }
+
+    //---------------------------------------------------------------------
 
     // Tela de saves do menu principal. Devolve o estado carregado ou null.
     public EstadodeJogoAtual menuSaves() {
@@ -93,6 +99,8 @@ public class ControladorSaves {
         }
     }
 
+    //---------------------------------------------------------------------
+
     private EstadodeJogoAtual carregarEscolhido() {
         hud.pedirSlot("carregar (0 = autosave)", 0);
         int slot = entrada.lerInteiro(RepositorioSave.SLOT_AUTOSAVE, RepositorioSave.TOTAL_SLOTS);
@@ -104,6 +112,8 @@ public class ControladorSaves {
             return null;
         }
     }
+
+    //---------------------------------------------------------------------
 
     private void excluirEscolhido() {
         hud.pedirSlot("excluir (0 = autosave)", 0);
@@ -126,7 +136,7 @@ public class ControladorSaves {
         }
     }
 
-    // -------------------------------
+    //---------------------------------------------------------------------
 
     private void exibirSlots() {
         for (int slot = RepositorioSave.SLOT_AUTOSAVE; slot <= RepositorioSave.TOTAL_SLOTS; slot++) {
